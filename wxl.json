@@ -1,0 +1,36 @@
+{
+  "manifest": 1,
+
+  "extension": {
+    "id": "wxl-grasswind",
+    "version": "1.0.0",
+    "abi": "1.1",
+    "entry": "wxl-grasswind.dll",
+    "assets": [],
+    "requires": {},
+    "conflicts": [],
+
+    "hooks": [
+      { "target": "GrassWind.ShaderCreateVertex" },
+      { "target": "GrassWind.InitShaderConstants" }
+    ]
+  },
+
+  "deploy": {
+    "mode": "release",
+    "match": "*.dll"
+  },
+
+  "listing": {
+    "title": "Grass Wind",
+    "tagline": "Makes the client's grass sway in the wind and part when you walk through it.",
+    "description": "store/description.md",
+    "cover": "store/cover.png",
+    "gallery": [],
+    "categories": ["rendering", "gameplay"],
+    "accent": "#6ea852"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "signature": null
+}
